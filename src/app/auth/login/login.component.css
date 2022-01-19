@@ -1,0 +1,22 @@
+.form_container{
+    width:200px;
+    margin: 0 auto;
+    margin-top:50px;
+}
+
+.form_container .group{
+    margin-bottom: 15px;
+}
+
+.form_container label{
+    display:block
+}
+
+.form_container button{
+    width:190px;
+    margin: 0 auto;
+}
+
+.form_error{
+    color:red;
+}

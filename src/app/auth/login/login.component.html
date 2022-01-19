@@ -1,0 +1,32 @@
+<div class="form_container">
+    <!-- <div>
+        <div>Email : {{ form.email }}</div>
+        <div>Passw : {{ form.password }}</div>
+    </div> -->
+    <br>
+    <form 
+        name="form" 
+        #f="ngForm"
+        (ngSubmit)="f.form.valid && onSubmit()"
+    >
+        <div class="group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" [(ngModel)]="form.email" #email="ngModel" required>
+            <div class="form_error" *ngIf="email.errors && f.submitted">
+                Email is required !
+            </div>
+        </div>
+        <div class="group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" [(ngModel)]="form.password" #password="ngModel" required minlength="5">
+   
+            <div class="form_error" *ngIf="password.errors && f.submitted">
+                <div *ngIf="password.errors['required']">Password is required</div>
+                <div *ngIf="password.errors['minlength']">Password must be at least 5 charracters</div>
+            </div>
+        </div>
+        <div class="group">
+            <button>Login</button>
+        </div>
+    </form>
+</div>

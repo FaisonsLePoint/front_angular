@@ -1,0 +1,10 @@
+.admin_body{
+    display:flex;
+}
+
+.menu{
+    flex-grow:1;
+}
+.admin_container{
+    flex-grow:6;
+}
