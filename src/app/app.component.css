@@ -1,0 +1,16 @@
+#server-error{
+    position: absolute;
+    background-color: red;
+    padding: 10px 40px;
+    right: 10px;
+    top: 50px;
+    display: none;
+}
+
+span{
+    cursor: pointer;
+}
+
+.error{
+    display: block !important;
+}

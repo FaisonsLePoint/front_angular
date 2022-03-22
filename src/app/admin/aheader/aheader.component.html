@@ -1,1 +1,6 @@
-<div style="background-color:grey">Header</div>
+<header>
+    <div>Bonjour {{user.nom | titlecase}} {{user.prenom | titlecase}}</div>
+    <button (click)="logout()">Logout</button>
+</header>
+
+

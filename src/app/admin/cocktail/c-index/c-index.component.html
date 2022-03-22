@@ -1,1 +1,32 @@
 <p>c-index works!</p>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th></th>
+                <th>#</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Recette</th>
+                <th>Dt Création</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let cocktail of cocktailList">
+                <td><a [routerLink]="['edit', cocktail.id]">Edit</a></td>
+                <td>
+                    <button (click)="trash(cocktail.id)" *ngIf="cocktail.deletedAt == null">T</button>
+                    <button (click)="untrash(cocktail.id)" *ngIf="cocktail.deletedAt != null">U</button>
+                </td>
+                <td>{{ cocktail.id }}</td>
+                <td>{{ cocktail.nom }}</td>
+                <td>{{ cocktail.description }}</td>
+                <td>{{ cocktail.recette }}</td>
+                <td>{{ cocktail.createdAt | date:'dd/mm/yyyy' }} </td>
+                <td>{{ cocktail.deletedAt | date:'dd/mm/yyyy' }} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,1 +1,30 @@
 <p>c-edit works!</p>
+<form #f="ngForm" name="form" (ngSubmit)="f.form.valid && onSubmit()">
+    <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom"
+            name="nom"
+            [(ngModel)]="cocktail.nom"
+            #nom="ngModel"
+        >
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" id="description"
+            name="description"
+            [(ngModel)]="cocktail.description"
+            #description="ngModel"
+        >
+    </div>
+    <div class="form-group">
+        <label for="recette">Recette</label>
+        <input type="text" id="recette"
+            name="recette"
+            [(ngModel)]="cocktail.recette"
+            #recette="ngModel"
+        >
+    </div>
+    <div class="form-group">
+        <button type="submit">Modifier</button>
+    </div>
+</form>

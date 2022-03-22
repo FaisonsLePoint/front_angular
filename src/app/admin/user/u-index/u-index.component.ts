@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IUser } from 'src/app/_interfaces/user';
+import { UserService } from 'src/app/_services/user.service';
 
 @Component({
   selector: 'app-u-index',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UIndexComponent implements OnInit {
 
-  constructor() { }
+  userList: IUser[] = []
+
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
+    this.userService.getAllUsers().subscribe(
+      users => {
+        console.log(users)    
+        this.userList = users.data
+    })
   }
 
 }
