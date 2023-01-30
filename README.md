@@ -1,27 +1,58 @@
-# Cocktail
+<div align="center">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+# Cocktail - Front End Angular 13
+</div>
 
-## Development server
+<p align="center">
+<a href="https://www.youtube.com/c/faisonslepoint" target="_blank" style="font-size:22px">FaisonsLePoint</a>
+<br><br>
+</p>
+<p align="center">
+    <img src="https://img.shields.io/badge/Angular-v13.1.0-blue">
+    <img src="https://img.shields.io/badge/Angular--Router-13.1.0-blue">
+    <img src="https://img.shields.io/badge/license-MIT-green">
+    <img src="https://img.shields.io/badge/build-passing-brightgreen">
+    <img src="https://img.shields.io/badge/node--lts-16.15.1-brightgreen">
+    <img src="https://img.shields.io/badge/npm-8.13.2-blue">
+    <img alt="YouTube Channel Views" src="https://img.shields.io/youtube/channel/views/UC0WQ4H6f2W14eS45bRDfp1Q?style=social">
+  <br><br><br>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# A propos
+Ce projet est le front de l'applicatif Cocktail. Il s'agit d'un exercice de réalisation de projet.
 
-## Code scaffolding
+Projet lancer avec [Angular CLI](https://angular.io/cli).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Fonctionnalitées
+- Applicatif en 2 parties. Une partie publique et une privée pour la gestion des données
+- Manipulation des données avec une API Rest
+- Utilisation du Json Web Token pour les sessions
 
-## Build
+## Pré-requis
+Pour fonctionner correctement ce projet utilise une API Rest
+[https://github.com/FaisonsLePoint/api_rest_express](https://github.com/FaisonsLePoint/api_rest_express) 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Vidéos
 
-## Running unit tests
+La réalisation de cet applicatif est entièrement disponible en vidéo sur la chaine
+[FaisonLePoint - Playlist AngularJS](https://www.youtube.com/watch?v=gS9gr5ixBbM&list=PLwJWw4Pbl4w8rQYsTA_3Z369vGX-tWhko)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Installation
+Une fois le dépôt cloné et une fois rendu dans le dossier du projet ne pas oublier d'installer les dépendances
+``` 
+npm install 
+```
 
-## Running end-to-end tests
+## Lancement
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Ce projet démarre en mode développement avec la commande :
 
-## Further help
+```
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pour construire et générer les fichier html css et js, vous avez la commande (la génération se fera dans le dossier build)
+
+```
+npm run build
+```
